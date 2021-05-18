@@ -1,0 +1,71 @@
+<div class="content">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title> Compute distance between two points </mat-card-title>
+      <mat-card-subtitle> using Homomorphic Encryption </mat-card-subtitle>
+      <img mat-card-avatar src="assets/logo.jpg" />
+    </mat-card-header>
+    <mat-card-content>
+      <form
+        class="distance-form"
+        [formGroup]="distanceForm"
+        (ngSubmit)="onCompute()"
+      >
+        <mat-form-field appearance="fill">
+          <mat-label>X1</mat-label>
+          <input
+            matInput
+            type="number"
+            min="-9999"
+            max="9999"
+            formControlName="x1"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Y1</mat-label>
+          <input
+            matInput
+            type="number"
+            min="-9999"
+            max="9999"
+            formControlName="y1"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>X2</mat-label>
+          <input
+            matInput
+            type="number"
+            min="-9999"
+            max="9999"
+            formControlName="x2"
+          />
+        </mat-form-field>
+        <mat-form-field appearance="fill">
+          <mat-label>Y2</mat-label>
+          <input
+            matInput
+            type="number"
+            min="-9999"
+            max="9999"
+            formControlName="y2"
+          />
+        </mat-form-field>
+        <button
+          mat-raised-button
+          color="primary"
+          type="submit"
+          [disabled]="distanceForm.invalid || (isProcessing$ | async) "
+        >
+          Compute
+        </button>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-stroked-button color="primary" (click)="onReset()">
+        Reset Values
+      </button>
+    </mat-card-actions>
+    <mat-card-footer> </mat-card-footer>
+  </mat-card>
+</div>
