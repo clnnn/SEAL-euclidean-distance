@@ -9,7 +9,7 @@
 - [Introduction](#introduction)
 - [Architecture](#architecture)
 - [Technologies involved](#technologies-involved)
-- [How to run it?](#how-to-run-it-)
+- [Run](#run)
   * [Client](#client)
   * [Server](#server)
 - [Remarks](#remarks)
@@ -21,7 +21,7 @@
 > *Homomorphic encryption* (`HE`) is a form of encryption that permits users to **perform computations on its encrypted data** without first decrypting it. These resulting computations are left in an encrypted form which, when decrypted, result in an identical output to that produced had the operations been performed on the unencrypted data.
 Homomorphic encryption can be used for **privacy-preserving outsourced storage and computation**. ([Source](https://en.wikipedia.org/wiki/Homomorphic_encryption))
 
-This repository contains a demo application where distance between two points is computed remotely **without revealing the actual data** to the third-parties and preserving privacy. 
+**This repository contains a privacy-aware application that computes remotely the distance between two points **without revealing the actual data** to the server.**
 
 ## Architecture
 
@@ -34,8 +34,7 @@ This repository contains a demo application where distance between two points is
 * [Microsoft SEAL](https://www.microsoft.com/en-us/research/project/microsoft-seal/) - homomorphic encryption library
 * [node-seal](https://github.com/morfix-io/node-seal) - SEAL WebAssembly wrapper
 
-## How to run it?
-
+## Run
 > `node.js` is required both for client-side and server-side
 
 ### Client
