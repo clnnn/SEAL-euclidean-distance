@@ -21,7 +21,7 @@
 > *Homomorphic encryption* (`HE`) is a form of encryption that permits users to **perform computations on its encrypted data** without first decrypting it. These resulting computations are left in an encrypted form which, when decrypted, result in an identical output to that produced had the operations been performed on the unencrypted data.
 Homomorphic encryption can be used for **privacy-preserving outsourced storage and computation**. ([Source](https://en.wikipedia.org/wiki/Homomorphic_encryption))
 
-**This repository contains a privacy-aware application that computes remotely the distance between two points **without revealing the actual data** to the server.**
+**This repository represent a privacy-aware application that computes remotely the distance between two points **without revealing the actual data** to the server.**
 
 ## Architecture
 
