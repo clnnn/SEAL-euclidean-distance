@@ -51,4 +51,4 @@ Homomorphic encryption can be used for **privacy-preserving outsourced storage a
 
 * This is just a Proof-of-Concept in order to test how homomorphic encryption can be used in web applications
 * The square root operator that is used in the Euclidean distance formula is computed on the client-side using `Math.sqrt(..)` due library limitations
-* HE seems to be good candidate for future for applications that are doing compute-intensive operations on private data
+* `HE` seems to be good candidate for future applications that are doing compute-intensive operations on private data
